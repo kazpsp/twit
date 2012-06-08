@@ -1,0 +1,29 @@
+<div id="userinfo">
+	<div id="foto">
+		 <fb:profile-pic uid="<%= @user.try(:identifier) %>" size="normal" facebook-logo="true"></fb:profile-pic>
+	</div>
+	<ul>
+		 <li><%= @user.name %></li>
+		 <li>Birthday: <%= @user.birthday %></li>	
+		 <li>Email: <%= @user.email %></li>	
+	</ul>
+</div>
+
+<div id="twits">
+	<ul>
+		<li class="twit">
+			<ul>
+				<li>Pic</li>
+				<li><%= @user.name %></li>	
+				<li>coment, coment coment comentc omcetyn </li>
+			</ul>
+		</li>	
+		<li class="twit">
+			<ul>
+				<li>Pic</li>
+				<li><%= @user.name %></li>	
+				<li>coment2 1, com23ent 123123coment come1 w eqw eqw e qwe wq sdqwkd qlwd wlqdwlqd wlqd kl23213ntc omce231tyn </li>
+			</ul>
+		</li>	
+	</ul>
+</div>
